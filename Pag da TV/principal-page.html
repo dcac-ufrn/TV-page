@@ -11,8 +11,21 @@
      body{
      	background-color:#000;
      }
+     #img_dcac{
+      position:absolute;
+      z-index: 1;
+    }
+     #frame_earth1{
+       position: absolute;
+       top:15vh;
+     }  
+     #frame_earth2{
+       position: absolute;
+       top:15vh;
+       left:33%;
+     }
      #frame_satelite{
-        position: absolute;
+        position:absolute;
         top: 0px; 
         left: 67%; 
     }
@@ -21,12 +34,14 @@
       top: 63.636363636vh;
       left: 67%;
     }
+    
      </style> 	
     }
   </head>
-  <body>  
-    <iframe width='33%' style="height:100vh" frameborder='0' src='https://earth.nullschool.net/#current/wind/isobaric/250hPa/orthographic=-45.00,0.00,272/loc=-36.215,-6.534'></iframe>
-    <iframe width='33%' style="height:100vh" frameborder='0' src='https://earth.nullschool.net/#current/wind/isobaric/1000hPa/orthographic=-45.00,0.00,272/loc=-35.762,-5.684'></iframe>
+  <body> 
+    <img id="img_dcac" src="horizontal_transp_pb2.png" height="166" width="820"> 
+    <iframe id="frame_earth1" width='32%' style="height:85vh" frameborder='0' src='https://earth.nullschool.net/#current/wind/isobaric/250hPa/orthographic=-45.00,0.00,216/loc=-35.902,-5.446'></iframe>
+    <iframe id="frame_earth2" width='32%' style="height:85vh" frameborder='0' src='https://earth.nullschool.net/#current/wind/isobaric/1000hPa/orthographic=-45.00,0.00,216/loc=-35.636,-5.180'></iframe>
   <iframe id="frame_youtube" width="33%" style="height:36.363636364vh" src="https://www.youtube.com/embed/videoseries?list=PL6Q91XtbnUlL_RUe7ckUYj23ZxIiHtoAv" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 	<iframe width="33%" id="frame_satelite" style="height:63.636363636vh" src="auxiliary-page.html" scrolling="" frameborder="0" ></iframe>
   </body>
